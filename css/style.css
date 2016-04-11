@@ -366,6 +366,21 @@ span.ac_close:hover{
 	width: 90%;
 }
 
+.kwicks > li .conts.with-text.scrollable h4{
+	font-size: 28px;
+	font-weight: bolder;
+	color: #990033;
+	text-shadow: -3px 3px 5px #000000;
+	padding-left: 30px;
+}
+
+.kwicks > li .conts.with-text.scrollable ul li{
+	padding:5px 30px;
+	color: #000;
+	background: transparent ()
+}
+
+
 .kwicks > li .conts a.thumb{
 	display: block;
 	width: 100%;
