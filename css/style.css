@@ -360,6 +360,11 @@ span.ac_close:hover{
 	width: 600px;
 }
 
+.kwicks > li .conts.with-text.scrollable{
+	overflow: overlay;
+	text-align: left;
+	width: 90%;
+}
 
 .kwicks > li .conts a.thumb{
 	display: block;
