@@ -363,7 +363,7 @@ span.ac_close:hover{
 .kwicks > li .conts.with-text.scrollable{
 	overflow: overlay;
 	text-align: left;
-	width: 90%;
+	width: 700px;
 }
 
 .kwicks > li .conts.with-text.scrollable h4{
