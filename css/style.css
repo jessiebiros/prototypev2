@@ -367,11 +367,23 @@ span.ac_close:hover{
 }
 
 .kwicks > li .conts.with-text.scrollable h4{
-	font-size: 28px;
+	font-size: 32px;
 	font-weight: bolder;
 	color: #990033;
 	text-shadow: -3px 3px 5px #000000;
 	padding-left: 30px;
+}
+
+.kwicks > li .conts.with-text.scrollable ul li{
+	font-weight: bolder;
+	font-size: 18px;
+	background: transparent url("../images/bullet.png") no-repeat center left;
+}
+
+.kwicks > li .conts.with-text.scrollable ul li span{
+	font-size: 20px;
+	color: #990033;
+	display: block;
 }
 
 .kwicks > li .conts.with-text.scrollable ul li{
@@ -491,6 +503,30 @@ span.ac_close:hover{
 }
 .kwicks > li .conts > ul li .desc h4 span{
 	color: #fff;
+}
+
+.kwicks > li .conts.with-text.contacts h2{
+	font-size: 40px;
+	text-shadow:1px 1px 1px #000;
+	margin-bottom: 30px;
+}
+
+.kwicks > li .conts.with-text.contacts p{
+	color: #000;
+	font-weight: bolder;
+	font-size: 18px;
+}
+
+.kwicks > li .conts.with-text.contacts p span{
+	color:#990033;
+}
+
+.kwicks > li .conts.with-text.contacts p span.details{
+	color: #fff;
+	font-size: 24px;
+	text-shadow:1px 1px 1px #000;
+	display: block;
+	margin-top: 30px;
 }
 
 
