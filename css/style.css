@@ -15,7 +15,7 @@ a{
 	width: 100%;
 	height: 100vh;
 	background:#000 url(../images/landing-bg2.jpg) no-repeat top left;
-	background-size: cover;
+	background-size: 1200px 700px;
 	z-index: 998;
 	position: absolute;
 	top: 0;
@@ -43,7 +43,6 @@ img.ac_bgimage{
 	left:0px;
 	top:0px;
 	width:100%;
-	opacity:0.8;
 	display:none;
 }
 .ac_overlay{
@@ -52,7 +51,6 @@ img.ac_bgimage{
 	position:fixed;
 	top:0px;
 	left:0px;
-	background:transparent url(../images/pattern.png) repeat top left;
 }
 .ac_loading{
 	position:fixed;
@@ -96,7 +94,7 @@ img.ac_bgimage{
 	text-indent: -9999px;
 }
 .ac_content h1 a{
-	background: transparent url(../images/primary-logo.png) no-repeat center bottom;
+	background: transparent url(../images/primary-logo-pb.png) no-repeat center bottom;
 	background-size: contain;
 	display: block;
 	width: 100%;
@@ -156,7 +154,6 @@ img.ac_bgimage{
 	z-index:99;
 	top: 200px;
 	overflow:hidden;
-	background:transparent url(../images/bg_menu2.png) repeat top left;
 }
 
 span.ac_close{
@@ -210,6 +207,10 @@ span.ac_close:hover{
 
 .about-head.left-align{
 	text-align: left;
+}
+
+.about-head.left-align > img{
+	width: 100%;
 }
 
 
@@ -357,21 +358,30 @@ span.ac_close:hover{
 }
 
 .kwicks > li .conts.with-text{
-	width: 600px;
+	width: 700px;
 }
 
 .kwicks > li .conts.with-text.scrollable{
-	overflow: overlay;
+	overflow-y: scroll;
 	text-align: left;
 	width: 700px;
+	padding-left: 50px;
+}
+
+.kwicks > li .conts.with-text.scrollable ul{
+	width: 100%;
 }
 
 .kwicks > li .conts.with-text.scrollable h4{
 	font-size: 32px;
 	font-weight: bolder;
-	color: #990033;
+	color: #ff4885;
 	text-shadow: -3px 3px 5px #000000;
 	padding-left: 30px;
+}
+
+.kwicks > li .conts.with-text.scrollable ul{
+	margin-top: 20px;
 }
 
 .kwicks > li .conts.with-text.scrollable ul li{
@@ -398,6 +408,7 @@ span.ac_close:hover{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+	border:5px solid #000;
 }
 
 .kwicks > li .conts .thumb img{
@@ -416,6 +427,11 @@ span.ac_close:hover{
 	background: linear-gradient(to bottom,  #28343b 0%,#28343b 0%,#828c95 55%,#b5bdc8 94%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28343b', endColorstr='#b5bdc8',GradientType=0 ); /* IE6-9 */
 	
+}
+
+.kwicks > li .conts .vid img{
+	width: 150px;
+	margin-bottom: 20px;
 }
 
 .kwicks > li:hover .caption, .kwicks .kwicks-expanded .caption, .kwicks .kwicks-selected .caption{
@@ -455,10 +471,14 @@ span.ac_close:hover{
 	transition: all 0.3s linear;
 	text-shadow: -3px 3px 5px #000000;
 }
+.kwicks > li .conts ul li{
+	overflow: hidden;
+}
 
 .kwicks > li .conts .desc{
 	text-align: left;
 	color: #000;
+	float: left;
 }
 
 .kwicks > li .conts > ul li div{
@@ -466,35 +486,40 @@ span.ac_close:hover{
 	vertical-align: middle;
 }
 
+.kwicks > li .conts > ul{
+	width: 75%;
+	float: left;
+}
+
+.kwicks > li .conts > ul.vid{
+	width: 25%;
+}
+
 .kwicks > li .conts > ul li .desc{
-	width: 65%;
 	font-weight: bold;
-	padding-left: 15%;
+	padding-left: 120px;
 }
 
 .kwicks > li .conts > ul li .desc.pix-booth{
-	background: transparent url("../images/bp-pix.png") no-repeat left center;
+	background: transparent url("../images/bp-pix.png") no-repeat left 15px center;
 	background-size: 75px 75px;
 }
 
 .kwicks > li .conts > ul li .desc.draw-booth{
-	background: transparent url("../images/bp-draw.png") no-repeat left center;
+	background: transparent url("../images/bp-draw.png") no-repeat left 15px center;
 	background-size: 75px 75px;
 }
 
 .kwicks > li .conts > ul li .desc.share-booth{
 	background: transparent url("../images/bp-share.png") no-repeat left center;
-	background-size: 75px 75px;
+	background-size: 107px 75px;
 }
 
 .kwicks > li .conts > ul li .desc.sign-booth{
-	background: transparent url("../images/bp-sign.png") no-repeat left center;
+	background: transparent url("../images/bp-sign.png") no-repeat left 15px center;
 	background-size: 75px 75px;
 }
 
-.kwicks > li .conts > ul li .vid{
-	width: 19%;
-}
 
 .kwicks > li .conts > ul li .desc h4{
 	font-weight: bold;
@@ -503,6 +528,11 @@ span.ac_close:hover{
 }
 .kwicks > li .conts > ul li .desc h4 span{
 	color: #fff;
+}
+
+.kwicks > li .conts.with-text.contacts{
+	position: relative;
+	top: 50px;
 }
 
 .kwicks > li .conts.with-text.contacts h2{
@@ -543,7 +573,52 @@ span.ac_close:hover{
 	cursor: pointer;
 }
 
+@media only screen and (min-width: 1440px){
+	.landing{
+		background-size: 1440px 800px;
+	}
 
+	.ac_content h1 a{
+		background-image: url(../images/primary-logo2.png);
+	}
+
+	.ac_menu > ul > li > a{
+		font-size: 28px;
+	}
+
+	.kwicks > li .conts{
+		height: 500px;
+		width: 650px;
+	}
+	
+	.kwicks > li .caption{
+		margin-top: 100px;
+	}
+
+	.kwicks > li:hover .caption, .kwicks .kwicks-expanded .caption, .kwicks .kwicks-selected .caption{
+		margin-top: 100px;
+	}
+
+	.kwicks > li .conts.with-text.scrollable ul li{
+		font-size: 24px;
+	}
+
+	.kwicks > li .conts.with-text.scrollable ul li span{
+		font-size: 26px;
+	}
+
+	.kwicks > li .conts.with-text.contacts h2{
+		font-size: 40px;
+	}
+
+	.kwicks > li .conts.with-text.contacts p{
+		font-size: 28px;
+	}
+
+	.kwicks > li .conts.with-text.contacts p span.details{
+		font-size: 32px;
+	}
+}
 
 
 
