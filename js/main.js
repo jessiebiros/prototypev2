@@ -10,7 +10,7 @@ $(function() {
 	$menuItems		= $mainNav.children('li'),
 	totalItems		= $menuItems.length,
 	$ItemImages		= new Array(),
-	$landing 		= $(".landing"),
+	$landing 		= $(".landing .screencover"),
 	$burgerNav		= $(".burger-nav");
 	
 	/* 
@@ -62,7 +62,7 @@ $(function() {
 			      $img = $('<img>').attr('src', src).on('load', function() {
 			        // do something, maybe:
 			        $ac_loading.hide();
-			        $div.fadeIn();
+			        $div.parent().fadeIn();
 					burgerClick();
 			      });
 			  }
@@ -84,7 +84,7 @@ $(function() {
 		},
 
 		hideLanding = function(){
-			$landing.addClass("magictime slideRight");
+			$landing.parent().addClass("magictime slideRight");
 		},
 
 		toggleLanding = function(){

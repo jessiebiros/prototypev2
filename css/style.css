@@ -14,8 +14,7 @@ a{
 .landing{
 	width: 100%;
 	height: 100vh;
-	background:#000 url(../images/landing-bg2.jpg) no-repeat top left;
-	background-size: 1200px 700px;
+	background:#000 ;
 	z-index: 998;
 	position: absolute;
 	top: 0;
@@ -23,7 +22,15 @@ a{
 	display: none;
 }
 
-.landing > a{
+.landing .screencover{
+	width: 1200px;
+	height: 700px;
+	background: #000 url(../images/landing-bg2.jpg) no-repeat top left;
+	background-size: cover;
+	position: relative;
+}
+
+.landing .screencover > a{
 	display: block;
 	width: 60px;
 	height: 35px;
@@ -33,9 +40,69 @@ a{
 }
 
 
-.landing > a img{
+.landing .screencover > a img{
 	width: 100%;
 	height: 100%;
+}
+
+.landing .screencover .social{
+	position: absolute;
+	bottom: 50px;
+	right: 185px;
+}
+
+.landing .screencover .social ul li{
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.landing .screencover .social ul li a{
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+
+.landing .screencover .social ul li a img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	-webkit-box-shadow: 0px 0px 15px 4px rgba(230,230,230,0.7);
+	-moz-box-shadow: 0px 0px 15px 4px rgba(230,230,230,0.7);
+	box-shadow: 0px 0px 15px 4px rgba(230,230,230,0.7);
+}
+
+.landing .screencover .gallery-view{
+	width: 200px;
+	height: 150px;
+	position: absolute;
+	right: 382px;
+    top: 302px;
+    text-align: center;
+}
+
+.landing .screencover .gallery-view .box{
+	width: 75px;
+    height: 25px;
+    margin: 0 auto 10px;
+    position: relative;
+}
+
+.landing .screencover .gallery-view .box div{
+	width: 15px;
+	height: 15px;
+	margin: 0 auto;
+	background: #f5f933;
+    transition: all 0.5s ease;
+	position: absolute;
+	bottom: 0;
+	left: 0; 
+	right: 0;
+
+}
+
+.landing .screencover .gallery-view:hover .box div{
+	width: 75px;
+	height: 2px;
 }
 
 img.ac_bgimage{
@@ -574,8 +641,16 @@ span.ac_close:hover{
 }
 
 @media only screen and (min-width: 1440px){
-	.landing{
-		background-size: 1440px 800px;
+	.landing .screencover{
+		width: 1440px;
+		height: 800px;
+		
+	}
+
+	
+	.landing .screencover .gallery-view{
+		right: 510px;
+	    top: 350px;
 	}
 
 	.ac_content h1 a{
@@ -617,6 +692,10 @@ span.ac_close:hover{
 
 	.kwicks > li .conts.with-text.contacts p span.details{
 		font-size: 32px;
+	}
+
+	.kwicks > li .conts ul li {
+		margin-bottom: 20px;
 	}
 }
 
