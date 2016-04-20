@@ -286,7 +286,7 @@ span.ac_close:hover{
 }
 
 .about-body{
-	width: 80%;
+	width: 75%;
 	height: 70%;
 	margin:0 auto;
 }
@@ -626,6 +626,7 @@ span.ac_close:hover{
 	margin-top: 30px;
 }
 
+
 .kwicks > li .conts.album a{
 	display: block;
 	width: 450px;
@@ -640,6 +641,32 @@ span.ac_close:hover{
 	cursor: pointer;
 }
 
+.kwicks.gall > li .conts{
+	transition: all 0.5s ease;
+}
+
+.kwicks.gall > li.kwicks-expanded .conts, .kwicks.gall > li.kwicks-selected .conts {
+	margin-left: auto;
+}
+/*
+.kwicks.gall > li.all{
+	padding-top: 0;
+	padding-bottom: 3%;
+}
+
+.kwicks.gall > li.all .conts.album{
+	width: 100%;
+	margin-top: -3%;
+	padding-bottom: 6%;
+	margin-left: 0;
+}
+
+.kwicks.gall > li.all .conts.album a{
+	width: 100%;
+	height: 600px;
+}
+*/
+
 @media only screen and (min-width: 1440px){
 	.landing .screencover{
 		width: 1440px;
@@ -647,7 +674,7 @@ span.ac_close:hover{
 		
 	}
 
-	
+
 	.landing .screencover .gallery-view{
 		right: 510px;
 	    top: 350px;
@@ -697,6 +724,16 @@ span.ac_close:hover{
 	.kwicks > li .conts ul li {
 		margin-bottom: 20px;
 	}
+
+	.kwicks > li .conts.album a{
+		width: 680px;
+		height: 450px;
+	}
+	
+	.kwicks.gall > li .conts{
+		margin-left: 30px;
+	}
+
 }
 
 
