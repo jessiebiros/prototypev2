@@ -1,0 +1,160 @@
+<div class="smob-header">
+  <img src="images/smob-setup-head.jpg" alt="">
+</div>
+<ul class="accordion">
+  <li>
+    <a class="toggle" href="javascript:void(0);">BPix Setup</a>
+    <ul class="inner">
+      <li>
+        <div class="text-conts">
+          <h1>pixs<span>booth</span></h1>
+          <p>
+            a full featured booth that takes photos and videos and lets guests choose print layout - 4x6 or strip and/or apply filters - BandW / Colored / Vintage
+          </p>
+        </div>
+      </li>
+       <li>
+        <div class="text-conts">
+          <h1>draw<span>booth</span></h1>
+          <p>
+            tap, mingle, snap, share. most interactive that lets guests draw on the screen, drag and drop virtual props & virtual stickers.
+          </p>
+        </div>
+      </li>
+       <li>
+        <div class="text-conts">
+          <h1>sign<span>booth</span></h1>
+          <p>
+            leave photo and video messages for celebrant sign right on the screen. Digital Guestbook on CD that celebrant can flip through
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="text-conts">
+          <h1>share<span>booth</span></h1>
+          <p>
+            touch screen that lets guests email their photos apply filters - B&amp;W/Colored/Vintage, print and upload to social media
+          </p>
+        </div>
+      </li>
+
+      <div class="videos">
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=KUwRciamjyk&feature=youtu.be"><img src="images/vid1.jpg" alt=""></a></li>
+          <li><a href="https://www.youtube.com/watch?v=SUzYxRAhfc4&feature=youtu.be"><img src="images/vid2.jpg" alt=""></a></li>
+          <li><a href="https://www.youtube.com/watch?v=G3DYOD3_lrk&feature=youtu.be"><img src="images/vid3.jpg" alt=""></a></li>
+        </ul>
+      </div>
+    </ul>
+  </li>
+
+  <li>
+    <a class="toggle" href="javascript:void(0);">BPix Setup</a>
+    <ul class="inner">
+      <li>
+          <a href="images/setup1.jpg" data-featherlight="image" class="thumb">
+              <img src="images/setup1.jpg" alt="">
+          </a>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <a class="toggle" href="javascript:void(0);">Fun and Crazy Props</a>
+    <ul class="inner">
+      <li>
+          <a href="images/setup3.jpg" data-featherlight="image" class="thumb">
+              <img src="images/setup3.jpg" alt="">
+          </a>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <a class="toggle" href="javascript:void(0);">Backdrops</a>
+    <ul class="inner">
+      <li>
+          <a href="images/setup4.jpg" data-featherlight="image" class="thumb">
+            <img src="images/setup4.jpg" alt="">
+          </a>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <a class="toggle" href="javascript:void(0);">Filters</a>
+    <ul class="inner">
+      <li>
+          <a href="images/setup5.jpg" data-featherlight="image" class="thumb">
+            <img src="images/setup5.jpg" alt="">
+          </a>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <a class="toggle" href="javascript:void(0);">1-Shot Template</a>
+    <ul class="inner">
+      <li>
+          <a href="images/setup6.jpg" data-featherlight="image" class="thumb">
+            <img src="images/setup6.jpg" alt="">
+          </a>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <a class="toggle" href="javascript:void(0);">2-Shot Template</a>
+    <ul class="inner">
+      <li>
+          <a href="images/setup7.jpg" data-featherlight="image" class="thumb">
+            <img src="images/setup7.jpg" alt="">
+          </a>
+      </li>
+    </ul>
+  </li>  
+
+  <li>
+    <a class="toggle" href="javascript:void(0);">3-Shot Template</a>
+    <ul class="inner">
+      <li>
+          <a href="images/setup8.jpg" data-featherlight="image" class="thumb">
+            <img src="images/setup8.jpg" alt="">
+          </a>
+      </li>
+    </ul>
+  </li>  
+  
+  <li>
+    <a class="toggle" href="javascript:void(0);">4-Shot Template</a>
+    <ul class="inner">
+      <li>
+          <a href="images/setup9.jpg" data-featherlight="image" class="thumb">
+            <img src="images/setup9.jpg" alt="">
+          </a>
+      </li>
+    </ul>
+  </li>  
+  
+</ul>
+
+
+<script class="none">
+  $(function(){
+    $('.toggle').click(function(e) {
+        e.preventDefault();
+      
+        var $this = $(this);
+      
+        if ($this.next().hasClass('show')) {
+            $this.next().removeClass('show');
+            $this.next().slideUp(350);
+        } else {
+            $this.parent().parent().find('li .inner').removeClass('show');
+            $this.parent().parent().find('li .inner').slideUp(350);
+            $this.next().toggleClass('show');
+            $this.next().slideToggle(350);
+        }
+    });
+  });
+</script>

@@ -1,0 +1,60 @@
+<div class="smob-header">
+  <img src="images/smob-setup-head.jpg" alt="">
+</div>
+<ul class="accordion">
+
+  <li>
+    <a class="toggle" href="javascript:void(0);">Packages</a>
+    <ul class="inner">
+      <li>
+          <a href="images/package1.jpg" data-featherlight="image" class="thumb">
+            <img src="images/package1.jpg" alt="">
+          </a>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <a class="toggle" href="javascript:void(0);">Contract</a>
+    <ul class="inner">
+      <li>
+          <a href="images/package2.jpg" data-featherlight="image" class="thumb">
+            <img src="images/package2.jpg" alt="">
+          </a>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <a class="toggle" href="javascript:void(0);">Privacy Policy</a>
+    <ul class="inner">
+      <li>
+          <a href="images/package3.jpg" data-featherlight="image" class="thumb">
+            <img src="images/package3.jpg" alt="">
+          </a>
+      </li>
+    </ul>
+  </li> 
+  
+</ul>
+
+
+<script class="none">
+  $(function(){
+    $('.toggle').click(function(e) {
+        e.preventDefault();
+      
+        var $this = $(this);
+      
+        if ($this.next().hasClass('show')) {
+            $this.next().removeClass('show');
+            $this.next().slideUp(350);
+        } else {
+            $this.parent().parent().find('li .inner').removeClass('show');
+            $this.parent().parent().find('li .inner').slideUp(350);
+            $this.next().toggleClass('show');
+            $this.next().slideToggle(350);
+        }
+    });
+  });
+</script>

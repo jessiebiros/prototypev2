@@ -12,6 +12,7 @@ $(function() {
 	$ItemImages		= new Array(),
 	$landing 		= $(".landing .screencover"),
 	$burgerNav		= $(".burger-nav");
+	$isMobile		= navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
 	
 	/* 
 	for this menu, we will preload all the images. 
@@ -30,8 +31,13 @@ $(function() {
 	
 	var Menu 			= (function(){
 		var init				= function() {
-			loadPage();
-			initWindowEvent();
+			if($isMobile){
+				window.location.replace("smob-index.html");
+			} else {
+				$ac_loading.show();//show loading status image
+				loadPage();
+				initWindowEvent();
+			}
 		},
 		loadPage			= function() {
 			/*
@@ -50,7 +56,7 @@ $(function() {
 			// $.when(loadImages()).done(function(){
 				
 			// });
-			$ac_loading.show();//show loading status image
+			
 			loader();
 		},
 

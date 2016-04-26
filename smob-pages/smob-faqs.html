@@ -1,0 +1,115 @@
+<div class="smob-header">
+  <img src="images/smob-setup-head.jpg" alt="">
+</div>
+<ul class="accordion">
+
+  <li>
+    <a class="toggle" href="javascript:void(0);">How BPix Works?</a>
+    <ul class="inner bullets">
+      <li class="title">Why Beyond Pixels Photobooth?</li>
+      <li>Most affordable, high quality photo booth experience in the market</li>
+      <li>Water-resistant prints that last up to years! We use printers powered with dye sublimation technology for professional quality color prints that you can gaze at through lifetime</li>
+      <li>With our high speed printing, no wait time as guests can pick up print in seconds</li>
+      <li>Guests can choose photo layout before printing - 1 copy of 4x6 or 2 copies of 2x3 strips</li>
+      <li>Guests can upload photo or animated GIFs to their facebook or twitter account</li>
+      <li>Guests can leave photo &amp; video messages for the host</li>
+      <li>Guests can write &amp; draw on the screen to personalize their own photos for printing or upload.</li>
+      <li>Wide range of crazy and funny props</li>
+    </ul>
+  </li>
+
+  <li>
+    <a class="toggle" href="javascript:void(0);">BPix Setup</a>
+    <ul class="inner bullets">
+      <li>
+        <span>Is there a limit on how many photos can be taken shoot at the event?</span>
+        No limit. Each package comes with unlimited shots with prints during your package event time
+      </li>
+      <li>
+        <span>Are the photos printed right on the spot?</span>
+        Yes, the booth will print the photos within seconds for your guests' immediate enjoyment
+      </li>
+      <li>
+        <span>Can the photo layout be personalized?</span>
+        Yes, We can personalize the design according to your color motif, theme and desired layout.
+      </li>
+      <li>
+        <span>Can I get copies of all the photos after the event is over?</span>
+        Yes, A complementary CD of all high-resolution photos taken at the event is given to host.
+      </li>
+      <li>
+        <span>Do you have other ways to let the guests have access to the photos taken during the event?</span>
+        Yes, An online gallery of all photos taken will be available in our official website (<a href="#">wwww.beyondpixelsca.com</a>) and Facebook account (<a href="#">www.facebook.com/beyondpixelsca</a>)
+      </li>
+      <li>
+        <span>Do you require a deposit to book the photo booth?</span>
+        Yes, we require a 50% deposit to block the Date &amp; time for your event. 50% balance payable on the day of the event. Downpayment serves as a nonrefundable reservation fee.
+      </li>
+      <li>
+        <span>What if I need to cancel my reservation?</span>
+        Cancellation or postponement shall only be due to acts of God. Downpayment can be applied to the same event and may be transferred to a different event as long as it is rescheduled within 30 days of original date. Other than that, downpayment will be forfeited.
+      </li>
+      <li>
+        <span>Where are your serviced areas? Can we still book the Photobooth outside these areas?</span>
+        We are servicing the entire Los Angeles Area. All BPI packages come with FREE mileage pers as follows: 
+        <img src="images/miles1.jpg" alt=""> free 10miles 
+        <img src="images/miles2.jpg" alt=""> Free 25miles 
+        <img src="images/miles3.jpg" alt=""> Free 35miles <br>
+        Outside those free milage, there is an additional fee of 75 cents per milage.
+      </li>
+      <li>
+        <span>What size of space does your booth require?</span>
+        Venue space should be at least 8ft. (long) x 6 ft. (wide). Two chairs, a table and electric outlet are needed as well.
+      </li>
+      <li>
+        <span>Is the set up and tear down time part of my package event time?</span>
+        No. Setup time is excluded from hours of coverage. It shall start exactly at event time indicated on the contract.
+      </li>
+      <li>
+        <span>Why would I need the photobooth if i have already hired a Photographer?</span>
+        Photographers do an amazing job capturing the memories of your special day. Our aim is to compliment your professional photographer - not replace them. We are extending our services to capture the fun experience of caraderie thru the use of digital technology. When family and friends pose in front of the booth, then give unreserved wacky poses, the excitement to see the photos prints in an instant - the fun begins and excitement never ends - truly priceless!
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <a class="toggle" href="javascript:void(0);">More Info</a>
+    <ul class="inner">
+      <li class="center">
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            This is a short list of our most frequently asked questions. <br/>
+            For more information about <span>Beyond Pixels Photobooth</span>, <br>
+            please contact us directly: 
+
+            <span class="details">
+              <br>info@beyondpixelsca.com <br>
+              (818) 294-2559
+            </span>
+          </p>
+      </li>
+    </ul>
+  </li> 
+  
+</ul>
+
+
+<script class="none">
+  $(function(){
+    $('.toggle').click(function(e) {
+        e.preventDefault();
+      
+        var $this = $(this);
+      
+        if ($this.next().hasClass('show')) {
+            $this.next().removeClass('show');
+            $this.next().slideUp(350);
+        } else {
+            $this.parent().parent().find('li .inner').removeClass('show');
+            $this.parent().parent().find('li .inner').slideUp(350);
+            $this.next().toggleClass('show');
+            $this.next().slideToggle(350);
+        }
+    });
+  });
+</script>
