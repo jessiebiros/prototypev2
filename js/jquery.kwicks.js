@@ -19,7 +19,7 @@
 				// general options:
 				maxSize: -1,
 				minSize: -1,
-				spacing: 5,
+				spacing: 0,
 				duration: 500,
 				isVertical: false,
 				easing: undefined,
@@ -343,7 +343,7 @@
 		// todo: cache the offset values
 		var expandedIndex = this.expandedIndex,
 			numPanels = this.$panels.length,
-			spacing = this.panelSpacing,
+			spacing = 0,
 			size = this.panelSize,
 			minSize = this.panelMinSize,
 			maxSize = this.panelMaxSize;
@@ -392,7 +392,7 @@
 			pDim = this.primaryDimension,
 			pAlign = this.primaryAlignment,
 			sAlign = this.secondaryAlignment,
-			spacing = this.panelSpacing,
+			spacing = 0,
 			containerSize = this.getContainerSize();
 
 		// the kwicks-processed class ensures that panels are absolutely positioned, but on our

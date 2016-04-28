@@ -87,6 +87,11 @@ a{
     position: relative;
 }
 
+.landing .screencover .gallery-view a{
+	opacity: 0;
+    transition: all 0.5s ease;
+}
+
 .landing .screencover .gallery-view .box div{
 	width: 15px;
 	height: 15px;
@@ -97,12 +102,15 @@ a{
 	bottom: 0;
 	left: 0; 
 	right: 0;
-
 }
 
 .landing .screencover .gallery-view:hover .box div{
 	width: 75px;
 	height: 2px;
+}
+
+.landing .screencover .gallery-view:hover a{
+	opacity: 1;
 }
 
 img.ac_bgimage{
@@ -418,6 +426,18 @@ span.ac_close:hover{
 	margin-top: 0;
 }
 
+.kwicks > li{
+	padding-left: 30px;
+}
+
+.kwicks > li:hover .caption, .kwicks .kwicks-expanded .caption, .kwicks .kwicks-selected .caption{
+	max-width: 90%;
+}
+
+.kwicks > li .caption{
+	margin-left: -30px !important;
+}
+
 .kwicks > li .conts{
 	height: 350px;
 	width: 500px;
@@ -685,7 +705,7 @@ span.ac_close:hover{
 	}
 
 	.ac_menu > ul > li > a{
-		font-size: 28px;
+		font-size: 36px;
 	}
 
 	.kwicks > li .conts{
@@ -734,6 +754,28 @@ span.ac_close:hover{
 		margin-left: 30px;
 	}
 
+	.kwicks > li .conts.with-text.contacts{
+		position: relative;
+		top: 120px;
+	}
+
+}
+
+@media only screen and (min-width: 1600px){
+	.landing .screencover{
+		background: #000 url(../images/landing-bg-large.jpg) no-repeat top left;
+		background-size: initial;
+		width: 1920px;
+	}
+
+	.landing .screencover > a{
+		left: 23%;
+	}
+
+	.landing .screencover .gallery-view{
+		right: 730px;
+	    top: 350px;
+	}
 }
 
 
