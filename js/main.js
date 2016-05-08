@@ -85,7 +85,23 @@ $(function() {
 						});
 					});
 				});
-				
+			});
+
+			$('.trigger_gallery').on('click', function(e){
+				e.preventDefault();
+				$.when(hideLanding()).done(function(){
+					$.when(showBGImage()).done(function(){
+						$.when(slideOutMenu()).done(function(){
+							$.when(toggleMenuItems('up')).done(function(){
+								$.when(initEventsSubMenu()).done(function(){
+									$(".gallery_open > a").trigger("click");
+									console.log("xxx");
+								});
+							});
+						});
+					});
+				});
+
 			});
 		},
 

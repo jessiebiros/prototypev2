@@ -233,15 +233,14 @@ img.ac_bgimage{
 
 span.ac_close{
 	margin:10px;
-	width:11px;
-	height:12px;
+	width:34px;
+	height:34px;
 	cursor:pointer;
 	background:transparent url(../images/close.png) no-repeat top left;
 	opacity:0.4;
 	position: absolute;
 	display: block;
 	right: 0;
-	border:1px solid red;
 }
 span.ac_close:hover{
 	opacity:1.0;
@@ -495,7 +494,6 @@ span.ac_close:hover{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	border:5px solid #000;
 }
 
 .kwicks > li .conts .thumb img{
@@ -532,6 +530,10 @@ span.ac_close:hover{
 	opacity: 1 !important;
 	-webkit-border-radius: 0 25px 25px 0;
 	border-radius: 0 25px 25px 0;
+}
+
+.kwicks .kwicks-selected.kwicks-collapsed{
+	margin-left: 0 !important;
 }
 
 .kwicks .kwicks-selected.kwicks-collapsed .caption{
@@ -668,24 +670,28 @@ span.ac_close:hover{
 .kwicks.gall > li.kwicks-expanded .conts, .kwicks.gall > li.kwicks-selected .conts {
 	margin-left: auto;
 }
-/*
-.kwicks.gall > li.all{
-	padding-top: 0;
-	padding-bottom: 3%;
+
+.kwicks .all > .conts.album{
+	width: 100%;
+    margin-top: -43px;
+    margin-left: -31px !important;
+    height: 643px;
 }
 
-.kwicks.gall > li.all .conts.album{
+.kwicks .all > .conts.album > a {
 	width: 100%;
-	margin-top: -3%;
-	padding-bottom: 6%;
-	margin-left: 0;
+	height: 100%;
 }
 
-.kwicks.gall > li.all .conts.album a{
-	width: 100%;
-	height: 600px;
+.kwicks .all > .caption{
+	margin-top: 0;
 }
-*/
+
+.kwicks > li.all:hover .caption, .kwicks .kwicks-expanded.all .caption, .kwicks .kwicks-selected.all .caption{
+	margin-top: 0;
+}
+
+
 
 @media only screen and (min-width: 1440px){
 	.landing .screencover{
@@ -766,6 +772,18 @@ span.ac_close:hover{
 		background: #000 url(../images/landing-bg-large.jpg) no-repeat top left;
 		background-size: initial;
 		width: 1920px;
+	}
+
+	.kwicks > li.booths .conts{
+		margin-top: 70px;
+	}
+
+	.kwicks > li.booths .caption{
+		margin-top: 30px;
+	}
+
+	.kwicks > li.booths:hover .caption, .kwicks .kwicks-expanded.booths .caption, .kwicks .kwicks-selected.booths .caption{
+		margin-top: 30px;
 	}
 
 	.landing .screencover > a{

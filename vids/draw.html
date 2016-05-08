@@ -1,1 +1,11 @@
-<iframe id="draw" width="560" height="315" src="https://www.youtube.com/embed/SUzYxRAhfc4" frameborder="0" allowfullscreen></iframe>
+<iframe id="video" src="https://www.youtube.com/embed/SUzYxRAhfc4" frameborder="0" width="1000" height="700" allowfullscreen></iframe>
+
+<script>
+	$(function(){
+	$('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+
+	$(window).resize(function(){
+	$('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+	});
+</script>
+	
