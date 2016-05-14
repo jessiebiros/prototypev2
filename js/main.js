@@ -103,6 +103,11 @@ $(function() {
 				});
 
 			});
+
+			$(".home-btn a").on("click", function(e){
+				e.preventDefault();
+				$landing.parent().fadeIn();
+			});
 		},
 
 		hideLanding = function(){
